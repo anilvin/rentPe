@@ -17,7 +17,6 @@ function App() {
       const {data} = await axios.get(url, {withCredentials:true});
       console.log(data,'user data')
       setUser(data.user);
-
     }catch(err){
         console.log(err)
     }
@@ -42,7 +41,6 @@ function App() {
           path='/signup'
           element={user ? <Navigate to="/" /> : <SignUP /> }
           />
-         
         </Routes>
     </div>
   );
