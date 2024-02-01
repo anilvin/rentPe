@@ -26,6 +26,11 @@ function App() {
   useEffect(()=>{
       getUser()
   },[])
+
+function add (){
+  console.log('add function')
+}
+
   return (
     <div className="App">
       <div style={{marginTop:'-20px'}}>har har Mahadev</div>
